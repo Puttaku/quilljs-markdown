@@ -12,6 +12,7 @@ import ListOfBulletFulltext from './listb/fulltext'
 import Codeblock from './codeblock'
 import CodeblockFullText from './codeblock/fulltext'
 import Strikethrough from './strikethrough'
+import Underline from './underline'
 
 class TagsOperators {
   constructor (quillJS, options = { tags: {} }) {
@@ -24,7 +25,8 @@ class TagsOperators {
       new Codeblock(this.quillJS, options).getAction(),
       new InlineCode(this.quillJS, options).getAction(),
       new Strikethrough(this.quillJS, options).getAction(),
-      new Italics(this.quillJS, options).getAction()
+      new Italics(this.quillJS, options).getAction(),
+      new Underline(this.quillJS, options).getAction(),
     ]
 
     this.supportfullTextTags = [
@@ -39,7 +41,8 @@ class TagsOperators {
       new LinkFullText(this.quillJS, options).getAction(),
       new InlineCode(this.quillJS, options).getAction(),
       new Strikethrough(this.quillJS, options).getAction(),
-      new Italics(this.quillJS, options).getAction()
+      new Italics(this.quillJS, options).getAction(),
+      new Underline(this.quillJS, options).getAction(),
     ]
 
     this.tags = [...this.supportInlineTags]
