@@ -26,7 +26,7 @@ class TagsOperators {
       new InlineCode(this.quillJS, options).getAction(),
       new Strikethrough(this.quillJS, options).getAction(),
       new Italics(this.quillJS, options).getAction(),
-      new Underline(this.quillJS, options).getAction(),
+      new Underline(this.quillJS, options).getAction()
     ]
 
     this.supportfullTextTags = [
@@ -42,7 +42,7 @@ class TagsOperators {
       new InlineCode(this.quillJS, options).getAction(),
       new Strikethrough(this.quillJS, options).getAction(),
       new Italics(this.quillJS, options).getAction(),
-      new Underline(this.quillJS, options).getAction(),
+      new Underline(this.quillJS, options).getAction()
     ]
 
     this.tags = [...this.supportInlineTags]

@@ -1,6 +1,5 @@
 export default (options) => {
-    return {
-      applyHtmlTags: ['underline'].map(tag => tag.toLowerCase())
-    }
+  return {
+    applyHtmlTags: ['underline'].map(tag => tag.toLowerCase())
   }
-  
+}

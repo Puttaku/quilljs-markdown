@@ -4,7 +4,7 @@
   "description": "Markdown for Quill Editor",
   "main": "index.js",
   "scripts": {
-    "clean": "node_modules/.bin/rimraf ./dist",
+    "clean": "rimraf ./dist",
     "watch": "parcel serve ./docs/index.html",
     "build": "npm-run-all clean fix:checkstyle build:* docs-build:*",
     "build:module": "webpack --config webpack.config.js",
